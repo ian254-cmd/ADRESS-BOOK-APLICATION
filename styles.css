@@ -1,0 +1,117 @@
+body {
+    font-family: 'Futura', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #754cac;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  header, footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  #places-list, #place-details, #add-place {
+    flex: 1;
+    background-color: #413333;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    max-width: 300px;
+  }
+  
+  #places {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #places li {
+    cursor: pointer;
+    padding: 0.5rem;
+    border-bottom: 1px solid #333;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+  
+  #places li img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+  #places li:hover {
+    background-color: #533d3d;
+  }
+  
+  #places li:last-child {
+    border-bottom: none;
+  }
+  
+  #details {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  
+  #add-place-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #add-place-form label {
+    margin-top: 0.5rem;
+  }
+  
+  #add-place-form input, #add-place-form textarea {
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+  
+  #add-place-form button {
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #add-place-form button:hover {
+    background-color: #45a049;
+  }
+  
+  #search {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: rgb(2, 2, 80);
+    color: #fff;
+  }
+  
+  footer {
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8rem;
+  }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Places You've Been</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Places You've Been</h1>
+  </header>
+  <main>
+    <section id="places-list">
+      <h2>Your Places</h2>
+      <input type="text" id="search" placeholder="Search places...">
+      <ul id="places"></ul>
+    </section>
+    <section id="place-details">
+      <h2>Place Details</h2>
+      <div id="details"></div>
+    </section>
+    <section id="add-place">
+      <h2>Add a New Place</h2>
+      <form id="add-place-form">
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+        <label for="landmarks">Landmarks (comma-separated):</label>
+        <input type="text" id="landmarks" name="landmarks" required>
+        <label for="timeOfYear">Time of Year:</label>
+        <input type="text" id="timeOfYear" name="timeOfYear" required>
+        <label for="notes">Notes:</label>
+        <textarea id="notes" name="notes"></textarea>
+        <label for="image">Image:</label>
+        <input type="file" id="image" name="image" accept="image/*">
+        <button type="submit">Add Place</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2125 Places You've Been</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
